@@ -21,12 +21,12 @@ jobs:
       - name: Build Spark App
         run: |
           cd Custom_folder/
-          ./build.sh  # Modify this command according to your build process
+          ./build.sh  
 
       - name: Run Tests
         run: |
           cd Custom_folder/
-          ./run_tests.sh  # Modify this command to run your tests
+          ./run_tests.sh  
 
   docker-push:
     needs: build-and-test
