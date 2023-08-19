@@ -45,5 +45,5 @@ jobs:
       - name: Build and Push Docker Image
         run: |
           cd Custom_folder/
-          docker build -t your-image-name:latest .
-          docker push your-image-name:latest
+          docker build -t <image-name>:latest .
+          docker push <image-name>:latest
